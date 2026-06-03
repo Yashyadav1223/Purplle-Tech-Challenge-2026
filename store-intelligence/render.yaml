@@ -4,6 +4,7 @@ services:
     env: docker
     plan: free # YOLO models need at least 512MB RAM, which the free tier provides
     region: oregon
+    rootDir: store-intelligence
     envVars:
       - key: PORT
         value: 10000
