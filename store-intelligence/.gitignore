@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# Video / data files
+*.mp4
+*.avi
+*.mkv
+*.mov
+test_data/
+videos/
+
+# YOLOv8 model weights
+*.pt
+*.onnx
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node / Dashboard
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/
+
+# Logs
+*.log
+logs/
+
+# Docker
+docker-compose.override.yml

@@ -1,0 +1,1 @@
+# Store Intelligence - Config Package

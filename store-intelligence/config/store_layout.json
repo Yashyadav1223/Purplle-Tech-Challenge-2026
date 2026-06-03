@@ -1,0 +1,137 @@
+{
+  "store_id": "STORE_BLR_002",
+  "store_name": "Purplle Beauty Store - Bangalore Koramangala",
+  "city": "Bangalore",
+  "open_hours": {
+    "weekday": {"open": "10:00", "close": "21:00"},
+    "weekend": {"open": "10:00", "close": "22:00"}
+  },
+  "floor_dimensions": {
+    "width_mm": 10101,
+    "height_mm": 12650,
+    "notes": "Dimensions from floor plan; F.O.H front-of-house + B.O.H back-of-house"
+  },
+  "cameras": [
+    {
+      "camera_id": "CAM_ENTRY_01",
+      "type": "entry",
+      "source_file": "dataset/Store 2/entry 1.mp4",
+      "resolution": [1920, 1080],
+      "description": "Main entrance camera - left side"
+    },
+    {
+      "camera_id": "CAM_ENTRY_02",
+      "type": "entry",
+      "source_file": "dataset/Store 2/entry 2.mp4",
+      "resolution": [1920, 1080],
+      "description": "Main entrance camera - right side"
+    },
+    {
+      "camera_id": "CAM_FLOOR_01",
+      "type": "floor",
+      "source_file": "dataset/Store 2/zone.mp4",
+      "resolution": [1920, 1080],
+      "description": "F.O.H main floor overhead camera covering all zones"
+    },
+    {
+      "camera_id": "CAM_BILLING_01",
+      "type": "billing",
+      "source_file": "dataset/Store 2/billing_area.mp4",
+      "resolution": [1920, 1080],
+      "description": "Cash counter and billing queue camera"
+    }
+  ],
+  "zones": [
+    {
+      "zone_id": "ENTRY_EXIT",
+      "zone_name": "Entrance",
+      "zone_type": "ENTRY_EXIT",
+      "camera_id": "CAM_ENTRY_01",
+      "polygon": [
+        [700, 900],
+        [1220, 900],
+        [1220, 1080],
+        [700, 1080]
+      ],
+      "description": "Main entrance at bottom-center of store, between existing glazing panels"
+    },
+    {
+      "zone_id": "LEFT_SHELF",
+      "zone_name": "Left Shelf - Wall Units 1-7",
+      "zone_type": "SHELF",
+      "camera_id": "CAM_FLOOR_01",
+      "polygon": [
+        [30, 280],
+        [280, 280],
+        [280, 920],
+        [30, 920]
+      ],
+      "description": "Left wall with Wall Units 1 (bottom) through 7 (top), plus units 5-6 angled inward"
+    },
+    {
+      "zone_id": "RIGHT_SHELF",
+      "zone_name": "Right Shelf - Wall Units 11-19",
+      "zone_type": "SHELF",
+      "camera_id": "CAM_FLOOR_01",
+      "polygon": [
+        [1640, 200],
+        [1900, 200],
+        [1900, 920],
+        [1640, 920]
+      ],
+      "description": "Right wall with Wall Units 11-12 (upper), 13 (corner), and 14-19 going down"
+    },
+    {
+      "zone_id": "CENTER_DISPLAY",
+      "zone_name": "Center Display - Gondolas & Makeup",
+      "zone_type": "DISPLAY",
+      "camera_id": "CAM_FLOOR_01",
+      "polygon": [
+        [450, 450],
+        [1200, 450],
+        [1200, 850],
+        [450, 850]
+      ],
+      "description": "Central area with MK Gondola 1, MK Gondola 2, and Makeup Units cluster"
+    },
+    {
+      "zone_id": "CASH_COUNTER",
+      "zone_name": "Cash Counter / Billing Area",
+      "zone_type": "BILLING",
+      "camera_id": "CAM_BILLING_01",
+      "polygon": [
+        [620, 50],
+        [1100, 50],
+        [1100, 300],
+        [620, 300]
+      ],
+      "description": "Cash counter at top-center of F.O.H, near the B.O.H boundary"
+    },
+    {
+      "zone_id": "SKINCARE",
+      "zone_name": "Skincare Zone",
+      "zone_type": "SHELF",
+      "camera_id": "CAM_FLOOR_01",
+      "polygon": [
+        [30, 280],
+        [280, 280],
+        [280, 580],
+        [30, 580]
+      ],
+      "description": "Skincare products on left wall, upper portion - Wall Units 5-7 area"
+    },
+    {
+      "zone_id": "LIPSTICK",
+      "zone_name": "Lipstick Zone",
+      "zone_type": "DISPLAY",
+      "camera_id": "CAM_FLOOR_01",
+      "polygon": [
+        [1050, 550],
+        [1350, 550],
+        [1350, 850],
+        [1050, 850]
+      ],
+      "description": "Lipstick and makeup display area near center-right, around Makeup Units cluster"
+    }
+  ]
+}

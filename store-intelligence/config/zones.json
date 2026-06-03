@@ -1,0 +1,39 @@
+{
+  "zones": [
+    {
+      "id": "entrance",
+      "name": "Store Entrance",
+      "polygon": [[0, 400], [200, 400], [200, 640], [0, 640]],
+      "type": "entry_exit",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "lipstick_aisle",
+      "name": "Lipstick Aisle",
+      "polygon": [[220, 50], [420, 50], [420, 300], [220, 300]],
+      "type": "product",
+      "color": "#EC4899"
+    },
+    {
+      "id": "skincare_aisle",
+      "name": "Skincare Aisle",
+      "polygon": [[440, 50], [640, 50], [640, 300], [440, 300]],
+      "type": "product",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "trial_area",
+      "name": "Trial / Sampling Area",
+      "polygon": [[220, 320], [420, 320], [420, 520], [220, 520]],
+      "type": "engagement",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "checkout",
+      "name": "Checkout Counter",
+      "polygon": [[440, 400], [640, 400], [640, 640], [440, 640]],
+      "type": "checkout",
+      "color": "#10B981"
+    }
+  ]
+}
