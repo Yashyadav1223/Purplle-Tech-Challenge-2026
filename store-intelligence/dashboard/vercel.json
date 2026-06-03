@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://YOUR_RENDER_APP_NAME.onrender.com/api/$1"
+      "destination": "https://store-intelligence-api-h3i8.onrender.com"
     }
   ]
 }

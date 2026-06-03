@@ -3,8 +3,8 @@ import {
   Activity, Users, ShoppingCart, Clock, AlertTriangle, LogOut,
   MonitorPlay, Square, UploadCloud, Video, Zap, MapPin,
   TrendingUp, Shield, CircleDot, ArrowRight, BarChart3,
-  Eye, Cpu, FileVideo, CheckCircle2, X, Store, ChevronDown,
-  Flame, Target, Layers,
+  Eye, Cpu, FileVideo, X, Store, ChevronDown,
+  Flame, Target,
 } from "lucide-react";
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
