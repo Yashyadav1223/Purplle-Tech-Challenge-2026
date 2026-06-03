@@ -2,7 +2,7 @@ services:
   - type: web
     name: store-intelligence-api
     env: docker
-    plan: starter # YOLO models need at least 512MB RAM
+    plan: free # YOLO models need at least 512MB RAM, which the free tier provides
     region: oregon
     envVars:
       - key: PORT
