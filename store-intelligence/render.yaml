@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: store-intelligence-api
+    env: docker
+    plan: starter # YOLO models need at least 512MB RAM
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: APP_ENV
+        value: production
+      - key: API_CORS_ORIGINS
+        value: '["*"]' # In production, set this to the Vercel frontend URL
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:///./store_intelligence.db
